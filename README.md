@@ -1,5 +1,7 @@
 # Lab 2 - Spring Boot App with CI/CD
 
+[![CI/CD Pipeline](https://github.com/diegobotia/laboratorio2024/actions/workflows/build.yml/badge.svg)](https://github.com/diegobotia/laboratorio2024/actions/workflows/build.yml)
+
 Implementation of a Simple App with the next operations:
 
 - Get random nations
