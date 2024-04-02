@@ -2,6 +2,16 @@
 
 [![CI/CD Pipeline](https://github.com/diegobotia/laboratorio2024/actions/workflows/build.yml/badge.svg)](https://github.com/diegobotia/laboratorio2024/actions/workflows/build.yml)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=JoseGomez14_lab2-arq-soft-live)](https://sonarcloud.io/summary/new_code?id=JoseGomez14_lab2-arq-soft-live)
+
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=JoseGomez14_lab2-arq-soft-live&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=JoseGomez14_lab2-arq-soft-live)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=JoseGomez14_lab2-arq-soft-live&metric=coverage)](https://sonarcloud.io/summary/new_code?id=JoseGomez14_lab2-arq-soft-live)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=JoseGomez14_lab2-arq-soft-live&metric=bugs)](https://sonarcloud.io/summary/new_code?id=JoseGomez14_lab2-arq-soft-live)
+
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=JoseGomez14_lab2-arq-soft-live&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=JoseGomez14_lab2-arq-soft-live)
+
 Implementation of a Simple App with the next operations:
 
 - Get random nations
