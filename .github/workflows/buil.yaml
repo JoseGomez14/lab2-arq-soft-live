@@ -36,7 +36,9 @@ jobs:
 
   #SonarCloud job
   sonarCloud:
-    name: Build and analyze
+    #Depends on test's job
+    needs: tests
+    name: Sonar Cloud Analysis
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
