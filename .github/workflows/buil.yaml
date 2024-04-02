@@ -70,7 +70,7 @@ jobs:
   #Build's job
   build:
     #Depends on sonar's job
-    needs: sonar
+    needs: sonarCloud
     name: Build
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
@@ -81,7 +81,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: "11"
+          java-version: "17"
       #Set up Maven cache
       - name: Cache Maven packages
         #This action allows caching dependencies and build outputs to improve workflow execution time.
