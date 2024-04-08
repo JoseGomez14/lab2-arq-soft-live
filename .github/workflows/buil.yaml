@@ -200,7 +200,9 @@ jobs:
         run: mvn -B package -DskipTests --file pom.xml
 
       - name: Copy JAR to Docker directory
-        run: cp target/lab2live-0.0.1-SNAPSHOT.jar actions/
+        run: |
+          mkdir -p actions
+          cp target/lab2live-0.0.1-SNAPSHOT.jar actions/app.jar
 
       - name: Build Docker image
         run: docker build -t $ECR_REPOSITORY .
