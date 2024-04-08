@@ -189,7 +189,7 @@ jobs:
       uses: aws-actions/amazon-ecr-login@62f4f872db3836360b72999f4b87f1ff13310f3a
 
     - name: Tag artifact
-      run: docker tag lab2live-0.0.1-SNAPSHOT 058264408817.dkr.ecr.us-east-2.amazonaws.com/$ECR_REPOSITORY:latest
+      run: docker tag lab2live 058264408817.dkr.ecr.us-east-2.amazonaws.com/$ECR_REPOSITORY:latest
 
     - name: Push to Amazon ECR
       run: docker push 058264408817.dkr.ecr.us-east-2.amazonaws.com/$ECR_REPOSITORY:latest
