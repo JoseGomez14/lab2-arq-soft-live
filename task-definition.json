@@ -1,0 +1,69 @@
+{
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:058264408817:task-definition/lab2-arqsoft-task:1",
+  "containerDefinitions": [
+      {
+          "name": "lab2-docker-image",
+          "image": "058264408817.dkr.ecr.us-east-2.amazonaws.com/lab2-arqsoft-ecr:lab2-docker-image",
+          "cpu": 1024,
+          "memory": 3072,
+          "memoryReservation": 1024,
+          "portMappings": [
+              {
+                  "name": "8080",
+                  "containerPort": 8080,
+                  "hostPort": 80,
+                  "protocol": "tcp",
+                  "appProtocol": "http"
+              }
+          ],
+          "essential": true,
+          "environment": [],
+          "environmentFiles": [],
+          "mountPoints": [],
+          "volumesFrom": [],
+          "ulimits": [],
+          "systemControls": []
+      }
+  ],
+  "family": "lab2-arqsoft-task",
+  "executionRoleArn": "arn:aws:iam::058264408817:role/AWSServiceRoleECS",
+  "networkMode": "awsvpc",
+  "revision": 1,
+  "volumes": [],
+  "status": "ACTIVE",
+  "requiresAttributes": [
+      {
+          "name": "com.amazonaws.ecs.capability.ecr-auth"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+      },
+      {
+          "name": "ecs.capability.execution-role-ecr-pull"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+      },
+      {
+          "name": "ecs.capability.task-eni"
+      }
+  ],
+  "placementConstraints": [],
+  "compatibilities": [
+      "EC2",
+      "FARGATE"
+  ],
+  "requiresCompatibilities": [
+      "EC2",
+      "FARGATE"
+  ],
+  "cpu": "1024",
+  "memory": "3072",
+  "runtimePlatform": {
+      "cpuArchitecture": "X86_64",
+      "operatingSystemFamily": "LINUX"
+  },
+  "registeredAt": "2024-04-09T00:06:35.188Z",
+  "registeredBy": "arn:aws:iam::058264408817:root",
+  "tags": []
+}
